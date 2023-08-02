@@ -1,0 +1,49 @@
+
+@font-face {
+    font-family: Droid-Arabic-Kufi;
+    src: url(../../assets/fonts/Droid.Arabic.Kufi_DownloadSoftware.iR_.ttf);
+}
+
+.secWidth
+{
+    height: 600PX;
+  
+}
+.secOne
+{
+    background-image: url(../../assets/images/Eservice/_04.jpeg);
+    background-position: left;
+    background-size: cover;
+}
+.secTwo
+{
+    background-image: url(../../assets/images/Eservice/2MakItGreen.jpg);
+    background-position: left;
+    background-size: cover;
+}
+.secThree
+{
+    background-image: url(../../assets/images/Eservice/01.jpg);
+    background-position: left;
+    background-size: cover;
+}
+.borderRadious {
+    border-radius: 25px !important;
+}
+.heading
+{
+    background: linear-gradient(rgba(0,0,0,1) 0%, rgba(0,0,24,1) 50%, rgba(0,212,255,0) 100%);
+
+}
+.EservicesText 
+{
+    text-align: right;
+    border-right:3px solid #7b9e10 ;
+    margin-right: 20px;
+    padding: 10px;
+    direction: rtl;
+    display: flex;
+    flex-direction: row-reverse;
+    font-family: 'Droid-Arabic-Kufi' !important;
+
+}

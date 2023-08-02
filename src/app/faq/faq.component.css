@@ -1,0 +1,77 @@
+
+@font-face {
+  font-family: Droid-Arabic-Kufi;
+  src: url(../../assets/fonts/Droid.Arabic.Kufi_DownloadSoftware.iR_.ttf);
+}
+*
+{
+  font-family: Droid-Arabic-Kufi !important;
+
+}
+
+button.accordion-button::after {
+    content: none !important;
+}
+.spanBorder
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    border: 1px solid #7288a2;
+}
+button , span
+{
+color: #7288a2;
+font-weight: 400;
+font-size: 1.15rem;
+}
+
+.accordion button :hover, .accordion span :hover
+{
+  cursor: pointer;
+  color: #7b9e10;
+}
+.testHover :hover .testHover .spanBorder
+{
+  border: 1px solid red;
+}
+
+
+/* .my :hover{
+  color :red;
+
+} */
+p
+{
+  margin: 32px 0;
+  text-align: right;
+  padding: 0px 40px;
+}
+.accordion-content
+{
+    opacity: 1;
+    max-height: 9em;
+    transition: all 200ms linear;
+    will-change: opacity, max-height;
+    background: #efefef;
+    padding: 0 40px;
+    text-align: left;
+
+}
+.accordion-item
+{
+  border: none !important;
+  border-bottom: 1px solid #e5e5e5 !important;
+  cursor: pointer;
+}
+.accordion-item:hover span, .accordion-item:hover i{
+  color: #7b9e10 !important;
+  border-color: #7b9e10; 
+}
+.accordion-title
+{
+  padding: 1em 1.5em 1em 0 ;
+}

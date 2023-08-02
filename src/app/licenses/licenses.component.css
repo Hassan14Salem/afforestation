@@ -1,0 +1,20 @@
+.licenses{
+    background-image: url(../../assets/images/download.jpeg);
+    background-size: 100% ;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.card-text
+{
+    margin-top: 0;
+    margin-bottom: 1rem;
+    padding-top: 10px;
+    font-size: 0.95rem;
+    line-height: 150%;
+    color: #4B4B4B;
+    
+}
+.card{
+    border: none !important;
+    border-radius: 0 !important;
+}
