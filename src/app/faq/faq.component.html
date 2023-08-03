@@ -1,4 +1,6 @@
 <section class="vh-100 bg-light d-flex align-items-center justify-content-center text-center">
+
+  
 <div class="container">
 <div class="row justify-content-center align-items-center">
     <div class="col-md-8 d-flex align-items-center justify-content-center">
@@ -6,16 +8,16 @@
         <h2 >الاسئلة الشائعة</h2>
         <div class="accordion " id="accordionExample">
           
-            <div class="accordion-item  bg-light">
+            <div class="accordion-item   bg-light" >
               <!--Header & Icon-->
-              <div class="d-flex justify-content-between testHover align-items-center">
+              <div class="d-flex justify-content-between change align-items-center" (click)="changeTheIcon" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                 <div class="ps-2 text-start">
                     <span class="spanBorder">
                     <i class="fa-solid fa-plus"></i>
                     </span>
                    </div>
                    <h2 class="accordion-header">
-                    <button class="accordion-button bg-light sectionText pe-0  text-end" type="button"  data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <button class="accordion-button bg-light sectionText pe-0  text-end" type="button"  >
                      <span class="accordion-title">
                       ما هي منصة التشجير الوطنية؟ وما دورها؟
                      </span>
@@ -32,17 +34,17 @@
                 </div>
               </div>
             </div>
-            <div class="accordion-item bg-light ">
-                <div class="d-flex justify-content-between align-items-center"> 
+            <div class="accordion-item bg-light " >
+                <div class="d-flex justify-content-between align-items-center" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"> 
                     <div class="ps-2 text-start">
                         <span class="spanBorder">
-                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-plus clickIcon"></i>
                         </span>
                        </div>
                     <div class="">
                   
                     <h2 class="accordion-header 2 ">
-                            <button  class="accordion-button pe-0 bg-light collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <button  class="accordion-button pe-0 bg-light collapsed" type="button"  >
                                 <SPan class="accordion-title">    
                                   ما هي الجهة المسؤولة عن المنصة؟             
                                 </SPan>
@@ -64,9 +66,9 @@
                 </div>
               </div>
             </div>
-            <div class="accordion-item bg-light">
+            <div class="accordion-item bg-light" >
 
-                <div class="d-flex justify-content-between align-items-center">
+                <div class="d-flex justify-content-between align-items-center" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                     <div class="ps-2 text-start">
                         <span class="spanBorder">
                         <i class="fa-solid fa-plus"></i>
@@ -75,7 +77,7 @@
                        </div>
 
                        <h2 class="accordion-header ">
-                        <button class="accordion-button bg-light pe-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <button class="accordion-button bg-light pe-0 collapsed" type="button" >
                        <span class="accordion-title"> 
                         ما هي الفئة المستفيدة؟                                                                                         
 
@@ -95,8 +97,8 @@
   
        </div>
                 </div>
-            <div class="accordion-item bg-light">
-                <div class="d-flex justify-content-between align-items-center">
+            <div class="accordion-item bg-light" >
+                <div class="d-flex justify-content-between align-items-center" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                     <div class="ps-2 text-start">
                         <span class="spanBorder">
                         <i class="fa-solid fa-plus"></i>
@@ -104,7 +106,7 @@
                         </span>
                        </div>
                        <h2 class="accordion-header ">
-                        <button class="accordion-button bg-light pe-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        <button class="accordion-button bg-light pe-0 collapsed" type="button" >
                           <span class="accordion-title">
                           كيف أقوم بالمشاركة والمساهمة في التشجير؟
                           </span>                                            
@@ -122,9 +124,9 @@
   
        </div>
                 </div>
-            <div class="accordion-item bg-light">
+            <div class="accordion-item bg-light" >
 
-                <div class="d-flex justify-content-between align-items-center">
+                <div class="d-flex justify-content-between align-items-center" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
                     <div class="ps-2 text-start">
                         <span class="spanBorder">
                         <i class="fa-solid fa-plus"></i>
@@ -132,7 +134,7 @@
                         </span>
                        </div>
                        <h2 class="accordion-header ">
-                        <button class="accordion-button bg-light p-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        <button class="accordion-button bg-light p-0 collapsed" type="button" >
                           <span class="accordion-title">
                             كيف طريقة التسجيل بالمنصة؟                                                   
 
@@ -142,7 +144,7 @@
                       </h2>
                 </div>
              
-              <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample" >
                 <p>
                   إدخال البيانات الأساسية، تعبئة بيانات الطلب.
 

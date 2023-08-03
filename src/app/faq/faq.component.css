@@ -29,15 +29,7 @@ font-weight: 400;
 font-size: 1.15rem;
 }
 
-.accordion button :hover, .accordion span :hover
-{
-  cursor: pointer;
-  color: #7b9e10;
-}
-.testHover :hover .testHover .spanBorder
-{
-  border: 1px solid red;
-}
+
 
 
 /* .my :hover{
@@ -74,4 +66,8 @@ p
 .accordion-title
 {
   padding: 1em 1.5em 1em 0 ;
+}
+.accordion-collapse
+{
+  cursor: auto !important;
 }
