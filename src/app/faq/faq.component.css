@@ -22,6 +22,7 @@ button.accordion-button::after {
     border-radius: 50%;
     border: 1px solid #7288a2;
 }
+
 button , span
 {
 color: #7288a2;
@@ -31,37 +32,63 @@ font-size: 1.15rem;
 
 
 
-
-/* .my :hover{
-  color :red;
-
-} */
+h1, h2, h3, h4, h5, h6, p {
+  text-align: right  !important;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
 p
 {
   margin: 32px 0;
   text-align: right;
   padding: 0px 40px;
-}
-.accordion-content
-{
-    opacity: 1;
-    max-height: 9em;
-    transition: all 200ms linear;
-    will-change: opacity, max-height;
-    background: #efefef;
-    padding: 0 40px;
-    text-align: left;
 
+  
 }
+
+
+.accordion button[aria-expanded=true] , .accordion-content{
+  opacity: 1;
+  max-height: 9em;
+  transition: all 200ms linear;
+  will-change: opacity, max-height;
+  background: #efefef !important;
+  padding: 0 5px;
+  overflow: hidden;
+  text-align: left;
+}
+
+.accordion .accordion-content p {
+  font-size: 1rem ;
+  font-weight: 300 ;
+  margin: 2em 0 ;
+ 
+}
+
 .accordion-item
 {
   border: none !important;
   border-bottom: 1px solid #e5e5e5 !important;
   cursor: pointer;
 }
-.accordion-item:hover span, .accordion-item:hover i{
+.accordion-item .bbExpanded[aria-expanded=true]
+{
+  border: none !important;
+  border-bottom: 1px solid #7b9e10 !important;
+  cursor: pointer;
+}
+
+.accordion-item:hover span, .accordion-item:hover i {
   color: #7b9e10 !important;
   border-color: #7b9e10; 
+}
+.accordion-item :focus span, .accordion-item :focus i {
+  color: #7b9e10 ;
+  border-color: #7b9e10 ; 
+}
+button{
+  text-align: right !important;
 }
 .accordion-title
 {
@@ -71,3 +98,4 @@ p
 {
   cursor: auto !important;
 }
+

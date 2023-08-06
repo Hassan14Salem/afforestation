@@ -1,23 +1,28 @@
-<section class="vh-100 bg-light d-flex align-items-center justify-content-center text-center">
+<section class="vh-100 bg-light d-flex align-items-center p-5 justify-content-center text-center">
 
   
 <div class="container">
 <div class="row justify-content-center align-items-center">
+
     <div class="col-md-8 d-flex align-items-center justify-content-center">
-     <div class="w-100 sectionText">
-        <h2 >الاسئلة الشائعة</h2>
-        <div class="accordion " id="accordionExample">
+
+     <div class=" w-100 p-5">
+
+        <div class="accordion" id="accordionExample">
+  <h2 class="d-flex align-items-center justify-content-center">الاسئلة الشائعة</h2>
+
           
             <div class="accordion-item   bg-light" >
               <!--Header & Icon-->
-              <div class="d-flex justify-content-between change align-items-center" (click)="changeTheIcon" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <div class="d-flex justify-content-between change align-items-center One bbExpanded" (click)="changeIcon()"  data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                 <div class="ps-2 text-start">
                     <span class="spanBorder">
-                    <i class="fa-solid fa-plus"></i>
+                      <i class="fa-solid fa-plus" *ngIf="!show"></i>
+                      <i class="fa-solid fa-minus" *ngIf="show"></i>
                     </span>
                    </div>
                    <h2 class="accordion-header">
-                    <button class="accordion-button bg-light sectionText pe-0  text-end" type="button"  >
+                    <button class="accordion-button bg-light sectionText border-none pe-0  text-end" type="button"  >
                      <span class="accordion-title">
                       ما هي منصة التشجير الوطنية؟ وما دورها؟
                      </span>
@@ -27,24 +32,26 @@
               </div>
              <!--Paragraph-->
               <div id="collapseOne" class="accordion-collapse collapse " data-bs-parent="#accordionExample">
-                <div class="accordion-content bg-light">
+                <div class="accordion-content  bg-light">
                   <p>
-                    نظام يتيح طلب الشتلات المحلية لدعم الجهود البيئية في تنمية الغطاء النباتي عبر المشاركة في حملات التشجير.
+                .نظام يتيح طلب الشتلات المحلية لدعم الجهود البيئية في تنمية الغطاء النباتي عبر المشاركة في حملات التشجير
                   </p>
                 </div>
               </div>
             </div>
             <div class="accordion-item bg-light " >
-                <div class="d-flex justify-content-between align-items-center" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"> 
+                <div class="d-flex justify-content-between align-items-center Two bbExpanded" id="One" (click)="changeIcon2()" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"> 
                     <div class="ps-2 text-start">
                         <span class="spanBorder">
-                        <i class="fa-solid fa-plus clickIcon"></i>
+                        <i class="fa-solid fa-plus clickIcon" *ngIf="!show2"></i>
+                        <i class="fa-solid fa-minus" *ngIf="show2 "></i>
+
                         </span>
                        </div>
                     <div class="">
                   
-                    <h2 class="accordion-header 2 ">
-                            <button  class="accordion-button pe-0 bg-light collapsed" type="button"  >
+                    <h2 class="accordion-header  ">
+                            <button  class="accordion-button pe-0 bg-light collapsed "  type="button"  >
                                 <SPan class="accordion-title">    
                                   ما هي الجهة المسؤولة عن المنصة؟             
                                 </SPan>
@@ -57,21 +64,23 @@
               
                 
               
-              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <p>
-                  المركز الوطني لتنمية الغطاء النباتي ومكافحة التصحر
-                </p>
-                <div class="accordion-body">
-
+              <div id="collapseTwo" class="accordion-collapse collapse " data-bs-parent="#accordionExample">
+                
+                <div class="accordion-content">
+                  <p>
+                    المركز الوطني لتنمية الغطاء النباتي ومكافحة التصحر
+                  </p>
                 </div>
               </div>
             </div>
             <div class="accordion-item bg-light" >
 
-                <div class="d-flex justify-content-between align-items-center" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <div class="d-flex justify-content-between align-items-center Three bbExpanded" (click)="changeIcon3()" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                     <div class="ps-2 text-start">
                         <span class="spanBorder">
-                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-plus" *ngIf="!show3"></i>
+                        <i class="fa-solid fa-minus" *ngIf="show3"></i>
+
     
                         </span>
                        </div>
@@ -87,21 +96,24 @@
                 </div>
                
                 <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                  <p>
-                    المجتمع المحلي بكافة شرائحه وفئاته، والمتطوعون والمهتمون بمجال التشجير
-                  </p>
-                  <div class="accordion-body">
+                 
+                  <div class="accordion-content">
 
-  
+                    <p>
+                      المجتمع المحلي بكافة شرائحه وفئاته، والمتطوعون والمهتمون بمجال التشجير
+                    </p>
                   </div>
   
        </div>
                 </div>
             <div class="accordion-item bg-light" >
-                <div class="d-flex justify-content-between align-items-center" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                    <div class="ps-2 text-start">
+                <div class="d-flex justify-content-between  align-items-center Four bbExpanded" (click)="changeIcon4()"  data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  
+                  <!--Icons (plus & minus)-->
+                  <div class="ps-2 text-start">
                         <span class="spanBorder">
-                        <i class="fa-solid fa-plus"></i>
+                          <i class="fa-solid fa-plus" *ngIf="!show4"></i>
+                          <i class="fa-solid fa-minus" *ngIf="show4"></i>
     
                         </span>
                        </div>
@@ -116,41 +128,46 @@
                
             
                 <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                  <p>
-                    تسجيل الدخول إلى النظام، تعبئة بيانات الطلب.، إرسال الطلب، مراجعة الطلب من الجهة المختصة، اعتماد الطلب.
-                  </p>
-                  <div class="accordion-body">
+           
+                  <div class="accordion-content">
+                    <p >
+                      تسجيل الدخول إلى النظام، تعبئة بيانات الطلب.، إرسال الطلب، مراجعة الطلب من الجهة المختصة، اعتماد الطلب.
+                    </p>
                   </div>
   
        </div>
                 </div>
             <div class="accordion-item bg-light" >
+              <div class="five" >
+                <div id="Five" class="d-flex justify-content-between align-items-center bbExpanded" (click)="changeIcon5()" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                  <div class="ps-2 text-start">
+                      <span class="spanBorder">
+                      <i class="fa-solid fa-plus" *ngIf="!show5"></i>
+                      <i class="fa-solid fa-minus" *ngIf="show5"></i>
 
-                <div class="d-flex justify-content-between align-items-center" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                    <div class="ps-2 text-start">
-                        <span class="spanBorder">
-                        <i class="fa-solid fa-plus"></i>
-    
-                        </span>
-                       </div>
-                       <h2 class="accordion-header ">
-                        <button class="accordion-button bg-light p-0 collapsed" type="button" >
-                          <span class="accordion-title">
-                            كيف طريقة التسجيل بالمنصة؟                                                   
+  
+                      </span>
+                     </div>
+                     <h2 class="accordion-header ">
+                      <button class="accordion-button  bg-light p-0 collapsed" type="button" aria-expanded="false">
+                        <span class="accordion-title">
+                          كيف طريقة التسجيل بالمنصة؟                                                   
 
-                          </span> 
-                          
-                        </button>
-                      </h2>
-                </div>
+                        </span> 
+                        
+                      </button>
+                    </h2>
+              </div>
+              </div>
+               
              
               <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample" >
-                <p>
-                  إدخال البيانات الأساسية، تعبئة بيانات الطلب.
-
-                </p>
-                <div class="accordion-body">
-
+               
+                <div class="accordion-content">
+                  <p >
+                    إدخال البيانات الأساسية، تعبئة بيانات الطلب.
+  
+                  </p>
                 </div>
 
      </div>
@@ -164,4 +181,6 @@
     </div>
 </div>
 </div>
+
+
 </section>

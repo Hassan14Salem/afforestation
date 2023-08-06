@@ -6,14 +6,45 @@ declare var $:any;
   styleUrls: ['./faq.component.css']
 })
 export class FAQComponent implements OnInit {
-changeIcon:string ="fa-minus"
+show:boolean=false
+show2:boolean=false
+show3:boolean=false
+show4:boolean=false
+show5:boolean=false
 
-changeTheIcon(){
-  $('.change').click(()=> {
-    $('.change').css('background','red')
-  })
+changeIcon()
+{
+  this.show=!this.show
+  console.log(event)
 }
+changeIcon2()
+{
+  this.show2=!this.show2
+  console.log(event)
+
  
+}
+changeIcon3()
+{
+  this.show3=!this.show3
+  console.log(event)
+
+ 
+}
+changeIcon4()
+{
+  this.show4=!this.show4
+  console.log(event)
+
+ 
+}
+changeIcon5()
+{
+ 
+    this.show5=!this.show5
+}
+
+
   constructor() { }
 
   ngOnInit(): void {
