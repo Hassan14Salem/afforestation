@@ -15,26 +15,27 @@ show5:boolean=false
 changeIcon()
 {
   this.show=!this.show
-  console.log(event)
+  this.show2=false
+  this.show3=false
+  this.show4=false
+  this.show5=false
+  
 }
 changeIcon2()
 {
   this.show2=!this.show2
-  console.log(event)
 
  
 }
 changeIcon3()
 {
   this.show3=!this.show3
-  console.log(event)
 
  
 }
 changeIcon4()
 {
   this.show4=!this.show4
-  console.log(event)
 
  
 }

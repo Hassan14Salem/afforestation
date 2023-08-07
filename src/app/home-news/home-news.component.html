@@ -1,0 +1,233 @@
+
+
+
+<section class=" p-5 ">
+
+  
+  <div class="container p-5 ">
+    <div class="d-flex justify-content-between align-items-center text-white heading">
+      <h2 class="text-white">الاخبار و الاحداث</h2>
+      <button class="btn btn-white    text-center NewsButton" routerLink="/News">مشاهدة الكل</button>
+    </div>
+        <div class="row p-5">
+            <div class="col-md-12 ">
+
+                <owl-carousel-o [options]="customOptions" class="category-block-inner">
+                    <ng-template *ngFor="let item of slides" carouselSlide class="me-5">
+                        <div class="col-sm-12">
+                            <a href="#" target="_blank" class="news_item">
+                              <div class="text-white newsBorder news-slider rounded p-4 me-3">
+                                  <div class="news_Date">
+                                      <span class="news_Date_Txt">  يناير</span>
+                                      <span class="news_date_num">04</span>
+                  
+                                  </div>
+                  
+                                <div class="text-end  title">
+                                
+              لنجعلها خضراء                   
+                  
+                                </div>
+                  
+                                <p class="txt">
+              
+                                  المركز يعلن عن اكتمال زراعة ما يقارب مليون شتلة مانجروف بمشروعي التراثية والصوارمة في جازان
+                                                          
+                            
+                                </p>
+                  
+                                <div class="Radious  news_img">
+                                  <img [src]="item.img"  alt="Info">
+                                </div>
+                               </div>
+                            </a>
+                           
+                          </div>
+                    </ng-template>  
+                    <ng-template carouselSlide>
+                        <div class="col-sm-12">
+                            <a href="#" target="_blank" class="news_item">
+                              <div class="text-white newsBorder news-slider rounded p-4 me-3">
+                                  <div class="news_Date">
+                                      <span class="news_Date_Txt">  ديسمبر</span>
+                                      <span class="news_date_num">02</span>
+                  
+                                  </div>
+                  
+                                <div class="text-end title">
+                                
+              
+                                  الدليل الاسترشادي للتشجير في البيئات الجافة
+                                                                         
+                  
+                                </div>
+                  
+                                <p class="txt">
+              
+                                  المركز يصدر الدليل الاسترشادي للتشجير في البيئات الجافة في المملكة ليكون مرجعًا للمهتمين بأعمال التشجير وللمتطوعين، إضافة إلى كونه نافذة علمية للتعريف بالتشجير وأهميته.
+                                                          
+                            
+                                </p>
+                  
+                                <div class="Radious news_img">
+                                  <img src="../../assets/images/News/012.jpg"  alt="Info">
+                                </div>
+                               </div>
+                            </a>
+                            
+                          </div>
+                    </ng-template>  
+                    <ng-template carouselSlide>
+                        <div class="col-sm-12">
+                            <a href="#" target="_blank" class="news_item">
+                              <div class="text-white newsBorder news-slider rounded p-4 me-3">
+                                  <div class="news_Date">
+                                      <span class="news_Date_Txt">  يناير</span>
+                                      <span class="news_date_num">12</span>
+                  
+                                  </div>
+                  
+                                <div class="text-end title">
+                                
+              
+                                  مبادرة السعودية الخضراء
+                                                                         
+                  
+                                </div>
+                  
+                                <p class="txt">
+              
+                                  المركز يقوم بنثر أكثر من 12 أطنان من البذور في 11 منطقة حول المملكة خلال 90 يومًا ضمن حملة
+                                                          
+                            
+                                </p>
+                  
+                                <div class="Radious news_img">
+                                  <img src="../../assets/images/News/009.jpg"  alt="Info">
+                                </div>
+                               </div>
+                            </a>
+                            </div>
+                    </ng-template>  
+
+                    <ng-template carouselSlide>
+                        <div class="col-sm-12">
+                            <a href="#" class="news_item" target="_blank">
+                             <div class="text-white newsBorder news-slider rounded p-4 me-3">
+                                 <div class="news_Date">
+                                     <span class="news_Date_Txt">  يناير</span>
+                                     <span class="news_date_num">19</span>
+                 
+                                 </div>
+                 
+                               <div class="text-end title">
+             
+                                 توقيع عقد بين المركز وإحدى الشركات الوطنية
+                                                                                                                
+                               </div>
+                 
+                               <p class="txt">
+             
+             
+                                 المركز يطلق مشروعًا لزراعة 400 ألف شتلة من الأشجار المحلية بمحمية الإمام تركي بن عبدالله الملكية
+                                 عبر توقيع عقد بين المركز وإحدى الشركات الوطنية، سعيًا لتحقيق مستهدفات مبادرة السعودية الخضراء
+                                
+                                                                                           
+                                                                            
+                           
+                               </p>
+                 
+                               <div class="Radious news_img">
+                                 <img src="../../assets/images/News/014.jpg"  alt="Info">
+                               </div>
+                              </div>
+                            </a>
+                           </div>
+                    </ng-template> 
+
+
+                    <ng-template carouselSlide>
+                        <div class="col-sm-12">
+                            <a href="#" target="_blank" class="news_item">
+                             <div class="text-white newsBorder news-slider rounded p-4 me-3">
+                                 <div class="news_Date">
+                                     <span class="news_Date_Txt">  ابريل</span>
+                                     <span class="news_date_num">19</span>
+                 
+                                 </div>
+                 
+                               <div class="text-end title">
+                               
+             
+                                 بالتعاون مع جامعة الملك عبدالله للعلوم والتقنية
+                                                                        
+                 
+                               </div>
+                 
+                               <div class="txt">
+             
+                                 يباشر المركز جولات ميدانية في أماكن انتشار إحدى أشهر أنواع النباتات الغازية في السعودية، معتمدًا على أحدث التقنيات، للتوصل إلى الطرق المناسبة لمكافحتها..
+                                                         
+                           
+                               </div>
+                 
+                               <div class="Radious news_img">
+                                 <img src="../../assets/images/News/011.jpg"  alt="Info">
+                               </div>
+                              </div>
+                            </a>
+                           </div>
+                    </ng-template> 
+
+
+
+                    <ng-template carouselSlide>
+                        <div class="col-sm-12">
+                            <a href="#" target="_blank" class="news_item">
+                             <div class="text-white newsBorder news-slider rounded p-4 me-3">
+                                 <div class="news_Date">
+                                     <span class="news_Date_Txt">  سبتمبر</span>
+                                     <span class="news_date_num">29</span>
+                 
+                                 </div>
+                 
+                               <div class="text-end  title">
+                               
+             
+                                 تكريم اصحاب الهمة العالية
+                                                                        
+                 
+                               </div>
+                 
+                               <p class="txt">
+             
+                                 المركز يُكرم صاحب الهمة العالية الأستاذ فهد الحربي لمشاركته الفاعلة في حملات التشجير بمحافظة الرس حيث قام بزراعة مايقارب ٥٠٠ شجرة
+             
+                                                         
+                           
+                               </p>
+                 
+                               <div class="Radious news_img">
+                                 <img src="../../assets/images/News/015.jpg"  alt="Info">
+                               </div>
+                              </div>
+                            </a>
+                           </div>
+                    </ng-template> 
+
+             
+                  </owl-carousel-o>
+
+                  <!-- <div class="d-flex justify-content-between align-items-center" customOptions>
+                      <button class="arrows " (click)="prev($event)">
+                         <i class="fa-solid fa-arrow-left " ></i>
+                      </button>
+                      <span class="arrows  owl-next owl.next next " (click)="next($event)">
+                          <i class="fa-solid fa-arrow-right " ></i>
+                      </span>
+                  </div> -->
+            </div>
+      
+        </div>
+    </div>
+</section>

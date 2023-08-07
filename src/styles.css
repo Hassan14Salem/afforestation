@@ -1,16 +1,39 @@
-/* You can add global styles to this file, and also import other style files */
-.accordion-button:focus {
-    z-index: 3;
-    /* border-color: var(--bs-accordion-btn-focus-border-color); */
-    outline: 0;
-    box-shadow: none  !important;
+.owl-theme .owl-dots .owl-dot span {
+  width: 13px ;
+  height: 10px;
+  margin: 5px 4px;
+  background: rgb(255 255 255 / 20%);
+  display: block;
+  -webkit-backface-visibility: visible;
+  transition: all .2s ease;
+  border-radius: 30px;
 }
-@font-face {
-    font-family: Droid-Arabic-Kufi;
-    src: url(../src/assets/fonts/Droid.Arabic.Kufi_DownloadSoftware.iR_.ttf);
+.owl-theme .owl-dots .owl-dot.active span {
+  width: 100px;
+  background-color: white;
+ 
 }
-*
-{
-  font-family: Droid-Arabic-Kufi !important;
+.owl-theme .owl-nav {
+  display: flex !important;
+  justify-content: space-between !important;
 
+}
+.owl-nav :is(.owl-next, .owl-prev)  {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px !important;
+  background-color: white !important;
+  color: black !important;
+  font-size: 32px !important;
+  font-weight: 500;
+  margin-inline: 60px !important;
+
+}
+.owl-nav :is(.owl-next, .owl-prev) span {
+  display: block;
+  margin-top: -6px;
+}
+
+.owl-dots.ng-star-inserted {
+  margin-top: -40px;
 }

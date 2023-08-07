@@ -10,6 +10,12 @@ import { FAQComponent } from './faq/faq.component';
 import { NewsComponent } from './news/news.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgbPaginationModule, NgbAlertModule } from '@ng-bootstrap/ng-bootstrap';
+import { HomeNewsComponent } from './home-news/home-news.component';
+import { RouterModule , ROUTES } from '@angular/router';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CarouselModule } from 'ngx-owl-carousel-o';
+import { TestComponent } from './test/test.component';
+ 
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,14 +23,18 @@ import { NgbPaginationModule, NgbAlertModule } from '@ng-bootstrap/ng-bootstrap'
     EServicesComponent,
     NavbarComponent,
     FAQComponent,
-    NewsComponent
+    NewsComponent,
+    HomeNewsComponent,
+    TestComponent  
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule ,
     NgbPaginationModule,
-     NgbAlertModule
+     NgbAlertModule , 
+     RouterModule , 
+     BrowserAnimationsModule , CarouselModule 
   ],
   providers: [],
   bootstrap: [AppComponent]

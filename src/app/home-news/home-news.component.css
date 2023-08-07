@@ -1,0 +1,187 @@
+section
+{
+    background-color: #090024;
+}
+
+
+@font-face {
+    font-family: test;
+    src: url(../../assets/fonts/Poppins-Medium.ttf);
+}
+.title{
+    font-size: 20px;
+    font-weight: 500;
+    opacity: 1;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    /* transition: opacity 0.3s; */
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  height: 60px;
+}
+.news_Date
+{
+    margin-bottom: 20px;
+    border-bottom: 2px solid;
+    display: inline-flex;
+    opacity: 1;
+    /* transition: opacity 0.3s; */
+}
+.news_date_num
+{
+
+    font-family: test !important;
+    display: block;
+    font-size: 32px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    
+}
+.news_Date_Txt
+{
+    font-size: 16px;
+    margin-top: 17px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.txt
+{
+    text-align: right;
+    margin: 10px 0;
+    line-height: 1.6em;
+    font-size: 15px;
+    opacity: 1;
+    /* transition: opacity 0.3s; */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    min-height: 75px;
+}
+.Radious
+{
+    border-radius: 10px;
+    object-fit: cover;
+
+}
+.news_img
+{
+    border-radius: 10px;
+    box-shadow: none !important;
+    box-shadow: 0 6px 26px 6px rgba(0, 0, 0, 0.25);
+    height: 200px;
+    margin-top: 30px;
+    width: 100%;
+    /* transition: all 0.3s; */
+    transform-origin: 0% 0%;
+}
+.news_img img
+{
+    max-width: 100%;
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.news-slider {
+    margin-bottom: 25px;
+    margin-top: 0;
+}
+.news_item
+{
+    text-decoration: none;
+        color: #222222;
+        /* transition-delay: 0.1s; */
+        background-color: #fff;
+        border: none !important;
+        box-shadow: 0 4px 16px rgb(0 0 0 / 10%);
+    text-align: right !important;
+}
+.news_item :hover{
+    color: #090024 ;
+    background-color: white !important;
+    /* transition: all 0.3s !important; */
+}
+.news_item :hover p,.news_item :hover .news_Date, .news_item :hover .news_Date span, .news_item :hover .title{
+    color: #090024;
+    background-color: white !important;
+    transition: all 0.3s !important;
+}
+.news_Date :hover span
+{
+    color: #090024;
+    background-color: yellow !important;
+    transition: all 0.3s !important;
+}
+.postNews img
+{
+    border-radius: 10px;
+    width: 80px !important;
+height: 60px;
+text-align: right !important;
+}
+
+
+.postNews_txt
+{
+    font-size: 15px !important;
+    font-weight: bold !important;
+    text-align: right !important;
+    text-decoration: none !important;
+}
+.text-p
+{
+    color:#aaaaaa;
+}
+.test
+{
+    flex-direction: row-reverse;
+}
+.buttonSearch
+{
+    background-color: #7b9e10;
+    color: white;
+}
+.titleOfSearch
+{
+    text-align: right;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 0 0 0 0;
+    margin: 0 0 15px 0;
+    color: #493c3e;
+}
+.heading{
+    flex-direction: row-reverse;
+}
+.inputsOne
+{
+    padding: 3px 10px !important;
+
+    border-radius: 0px !important;
+}
+.newsBorder{
+    border: 1px solid #3a3350;
+}
+.NewsButton
+{
+    --bs-btn-color: #090024;
+    --bs-btn-border-color: #fff;
+    --bs-btn-hover-color: #8585ac;
+    --bs-btn-hover-bg: #fff;
+    --bs-btn-hover-border-color: #fff;
+    --bs-btn-focus-shadow-rgb: 123, 158, 16;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #fff;
+    --bs-btn-active-border-color: #fff;
+    --bs-btn-active-shadow: inset 0 3px 5pxrgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: white;
+    --bs-btn-disabled-border-color: #fff;
+    --bs-gradient: none;
+    background-color: #FFF;
+    border-radius: 50px;
+}
